@@ -1,0 +1,11 @@
+name: "Checout master and current branch"
+author: Libeo
+description: "Checkout current branch and master branch, usefull for nx affected commands"
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: "master"
+    - uses: actions/checkout@v3
